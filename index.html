@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Reset</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div>
+        <div>
+            <img src="admin-logo-32x32.png" alt="app-logo"/>
+        </div>
+        <div>
+            Nume Aplicatie
+        </div>
+    </div>
+</header>
+<div class="page">
+    <div>
+        <h2>PASSWORD RESET</h2>
+        <div hidden id="spinner">
+            <span></span>
+        </div>
+    </div>
+    <form onsubmit="" method="get">
+        <div>
+            <label for="password">New password</label>
+            <input
+                    name="password"
+                    type="password"
+                    id="password"
+                    onblur="blurInput('cucubau')"
+            />
+        </div>
+        <div>
+            <label for="confirm-password">Confirm password</label>
+            <input
+                    name="confirm-password"
+                    type="password"
+                    id="confirm-password"
+                    onblur="blurInput('cucubau')"
+            />
+        </div>
+        <div>
+            <input type="submit" value="RESET PASSWORD">
+            <span id="confirm-message2" class="confirm-message"></span>
+        </div>
+    </form>
+</div>
+<footer>
+    <div class="left">
+        webadmin@bitbrother.ro
+        <br/>
+        contact@bitbrother.ro
+    </div>
+    <div class="right">
+        www.bitbrother.ro
+        <br/>
+        www.bbsmedia.ro
+    </div>
+    <div class="bottom">
+        © 2020 by BITBROTHER - all rights reserved
+    </div>
+</footer>
+<script src="./index.js" type="text/javascript"></script>
+</body>
+</html>

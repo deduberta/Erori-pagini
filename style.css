@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7C4CDC;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    /*font-weight: ;*/
+}
+
+header img {
+    margin-right: 10px;
+}
+
+footer {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-areas: "left right" "bottom bottom";
+    width: 100%;
+    height: 120px;
+    background-color: #7C4CDC;
+    color: white;
+    padding: 20px 40px;
+}
+
+footer .left {
+    grid-area: left;
+    height: 60px;
+
+}
+
+footer .right {
+    grid-area: right;
+    height: 60px;
+    text-align: right;
+}
+
+footer .bottom {
+    grid-area: bottom;
+    height: 60px;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+input[id="confirm-password"],input[id="password"], input[id="confirm-password"],input[id="password"]:focus, input[type="password"]:active {
+    outline: none;
+}
+
+.page {
+    padding: 40px;
+    height: 100%;
+    width: calc(100% - 96px);
+}
+
+.page h2 {
+    color: #7C4CDC;
+}
+
+.page > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page input[id="confirm-password"],input[id="password"] {
+    border: none;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    max-width: 600px;
+}
+
+.page input[id="confirm-password"],input[id="password"]:focus {
+    border-color: lightseagreen;
+}
+
+input[id="confirm-password"],input[id="password"] {
+    padding: 12px;
+    margin:12px;
+}
+.form > div {
+    margin-top: 30px;
+}
+
+.page input[type="submit"], .page-button:focus, .page input[type="submit"]:active {
+    outline: none;
+}
+
+.page input[type="submit"] {
+    border-radius: 10px;
+    border: 4px solid #7C4CDC;
+    background-color: white;
+    padding: 14px;
+}
+
+
+.page input[type="submit"]:hover {
+    background-color:#a1b4d4;
+}
+
+.page input[type="submit"]:disabled {
+    border-color: grey;
+}
+
+#spinner {
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    width: 48px;
+    height: 48px;
+    animation: rotation 1s infinite linear;
+    border: 6px solid lightgrey;
+    border-radius: 100%;
+}
+
+#spinner span {
+    display: block;
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    height: 100%;
+    width: 100%;
+    border-top: 6px solid #7C4CDC;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-radius: 100%;
+}
+#spinner.show {
+    visibility: visible;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+.confirm-message{
+    margin: 0;
+    padding: 0;
+    font-size: .8em;
+}
